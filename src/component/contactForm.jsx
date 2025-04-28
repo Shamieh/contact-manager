@@ -2,7 +2,7 @@ import { useState } from "react";
 import './css/contactForm.css'
 
 
-const ContactForm = (addcontact, contacts) => {
+const ContactForm = (props) => {
 
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
@@ -15,7 +15,7 @@ const ContactForm = (addcontact, contacts) => {
             username,
             email
         };
-        addcontact(contactInfo);
+        props.addContact(contactInfo);
 
     }
     return (
