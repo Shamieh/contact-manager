@@ -6,7 +6,7 @@ const ContactInfoList = (props) => {
     <div className="list">
       <h2>Contacts:</h2>
 
-      <ul>
+      <ul className="styled-list">
         {props.contacts.map((contact, index) => (
           <ContactListItem
             key={index}

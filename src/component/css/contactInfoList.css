@@ -1,4 +1,4 @@
-.list
+/* .list
  {
      padding: 0;
      background-color: #ffffff;
@@ -11,6 +11,64 @@
     ul{
         
         list-style: none;
-}
-
+} */
+/* Base Styles for the List */
+ul.styled-list {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for individual list items */
+  ul.styled-list .list-item {
+    background-color: #fff;
+    color: #333;
+    padding: 12px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-left: 5px solid #3498db; /* Blue left border */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Hover Effect */
+  ul.styled-list .list-item:hover {
+    background-color: #e0f7fa;
+    color: #333;
+    border-left-color: #2c3e50; /* Darker blue */
+  }
+  
+  /* Active State for List Item */
+  ul.styled-list .list-item:active {
+    background-color: #2c3e50;
+    color: #fff;
+    transform: scale(0.98); /* Slight shrink effect when clicked */
+  }
+  
+  /* Adding Icon to List Items */
+  ul.styled-list .list-item::before {
+    content: "✔️"; /* Custom checkmark icon */
+    margin-right: 10px;
+    color: #3498db;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    ul.styled-list {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    ul.styled-list .list-item {
+      font-size: 14px;
+    }
+  }
+  
 

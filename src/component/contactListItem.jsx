@@ -5,7 +5,7 @@ import './css/contactListItem.css'
 const ContactListItem = (props) => {
     return (
         <div>
-            <li key={props.index}>
+            <li key={props.index} className="list-item">
                 <strong>
                 {props.contact.username}
                 - 
